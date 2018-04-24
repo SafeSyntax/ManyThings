@@ -14,4 +14,4 @@ using namespace std;
   }
  ```
 
-> Every Day has gone
+> Just a qoute 

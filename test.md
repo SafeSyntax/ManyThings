@@ -28,3 +28,7 @@ This site was built using [Safe Syntax](https://safesyntax.com/).
   - [x] Finish my changes
 - [ ] Push my commits to GitHub
 - [ ] Open a pull request
+
+
+
+| Shortcut | Description |

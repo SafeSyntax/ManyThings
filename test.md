@@ -15,3 +15,7 @@ using namespace std;
  ```
 
 > Just a qoute 
+
+This site was built using [Safe Syntax](https://safesyntax.com/).
+
+

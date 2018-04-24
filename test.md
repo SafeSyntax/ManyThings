@@ -36,3 +36,14 @@ This site was built using [Safe Syntax](https://safesyntax.com/).
 | git diff | Show file differences that haven't been staged |
 | git status | List all new or modified files |
 | git status | List all new or modified files |
+
+
+| Shortcut | Description |
+| ---------| ----------- |
+| <kbd>Ctrl</kbd>+<kbd>P</kbd> | go to file |
+| <kbd>Ctrl</kbd>+<kbd>G</kbd> | go to line |
+| <kbd>Ctrl</kbd>+<kbd>R</kbd> | go to methods |
+| <kbd>Ctrl</kbd>+<kbd>K</kbd><kbd>B</kbd> | toggle side bar |
+| <kbd>Ctrl</kbd>+<kbd>N</kbd> | new window |
+| <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd> | new window |
+

@@ -24,3 +24,7 @@ This site was built using [Safe Syntax](https://safesyntax.com/).
 
 - List 
   - Another
+  
+  - [x] Finish my changes
+- [ ] Push my commits to GitHub
+- [ ] Open a pull request

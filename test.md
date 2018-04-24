@@ -18,7 +18,7 @@ using namespace std;
 
 This site was built using [Safe Syntax](https://safesyntax.com/).
 
-** Item 1
+* Item 1
 * Item 2
 * Item 3
 

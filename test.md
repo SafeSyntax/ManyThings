@@ -57,12 +57,11 @@ This site was built using [Safe Syntax](https://safesyntax.com/).
 | ---------| ----------- |
 Child: >
 You can use > operator to nest elements inside each other:
-| <kbd>div>ul>li</kbd> |
-<div>
+| <kbd>div>ul>li</kbd> | ``` <div>
     <ul>
         <li></li>
     </ul>
-</div> |
+</div> ```` |
 
 | <kbd>Ctrl</kbd>+<kbd>I</kbd> | incremental find |
 | <kbd>Ctrl</kbd>+<kbd>H</kbd> | replace |

@@ -53,11 +53,12 @@ This site was built using [Safe Syntax](https://safesyntax.com/).
 
 ## Quick way to code at Sublime Text
 
-Child: >
+Child: >  
 You can use > operator to nest elements inside each other:
 
 <kbd>  div>ul>li  </kbd>  
 ``` 
+Output
 <div>
     <ul>
         <li></li>

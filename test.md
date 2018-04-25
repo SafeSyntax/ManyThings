@@ -47,3 +47,25 @@ This site was built using [Safe Syntax](https://safesyntax.com/).
 | <kbd>Ctrl</kbd>+<kbd>N</kbd> | new window |
 | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd> | new window |
 
+
+
+
+
+## Quick way to code at Sublime Text
+
+| Shortcut | Description |
+| ---------| ----------- |
+Child: >
+You can use > operator to nest elements inside each other:
+| <kbd>div>ul>li</kbd> | <div>
+    <ul>
+        <li></li>
+    </ul>
+</div>|
+| <kbd>Ctrl</kbd>+<kbd>I</kbd> | incremental find |
+| <kbd>Ctrl</kbd>+<kbd>H</kbd> | replace |
+| <kbd>Ctrl</kbd>+<kbd>F3</kbd> | find next occurrence of current word |
+| <kbd>Alt</kbd>+<kbd>F3</kbd> | select all occurrences of current word for multiple editing |
+| <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd> | find in files |
+
+

@@ -63,7 +63,14 @@ Child: >
 </div> 
 ``` 
 
+Sibling: +
 
+<kbd>div+p+bq</kbd>  
+```
+<div></div>
+<p></p>
+<blockquote></blockquote>
+```
 
 
 | <kbd>Ctrl</kbd>+<kbd>I</kbd> | incremental find |

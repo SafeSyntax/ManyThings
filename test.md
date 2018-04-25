@@ -58,7 +58,7 @@ This site was built using [Safe Syntax](https://safesyntax.com/).
 Child: >
 You can use > operator to nest elements inside each other:
 | <kbd>div>ul>li</kbd> | 
-|<div>
+<div>
     <ul>
         <li></li>
     </ul>

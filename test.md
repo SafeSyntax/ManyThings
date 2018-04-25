@@ -48,21 +48,18 @@ This site was built using [Safe Syntax](https://safesyntax.com/).
 | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd> | new window |
 
 
-
-
-
 ## Quick way to code at Sublime Text
 
 #### Child: >
 
 div>ul>li
-
+```
 <div>
     <ul>
         <li></li>
     </ul>
 </div>
-
+```
 
 #### Sibling: +
 
@@ -73,12 +70,12 @@ div+p+bq
 <blockquote></blockquote>
 
 div+div>p>span+em 
-
+```
 <div></div>
 <div>
     <p><span></span><em></em></p>
 </div>
-
+```
 
 
 #### Climb-up: ^
@@ -86,30 +83,30 @@ div+div>p>span+em
 With ^ operator, you can climb one level up the tree and change context where following elements should appear:
 
 div+div>p>span+em^bq
-
+```
 <div></div>
 <div>
     <p><span></span><em></em></p>
     <blockquote></blockquote>
 </div>
-
+```
 
 You can use as many ^ operators as you like, each operator will move one level up:
 
 div+div>p>span+em^^^bq
-
+```
 <div></div>
 <div>
     <p><span></span><em></em></p>
 </div>
 <blockquote></blockquote>
-
+```
 
 #### Multiplication: *
 
 ul>li*5
 ...outputs to
-
+```
 <ul>
     <li></li>
     <li></li>
@@ -117,12 +114,12 @@ ul>li*5
     <li></li>
     <li></li>
 </ul>
-
+```
 
 #### Grouping: ()
 
 div>(header>ul>li*2>a)+footer>p
-
+```
 <div>
     <header>
         <ul>
@@ -134,10 +131,10 @@ div>(header>ul>li*2>a)+footer>p
         <p></p>
     </footer>
 </div>
-
+```
 
 (div>dl>(dt+dd)*3)+footer>p
-
+```
 <div>
     <dl>
         <dt></dt>
@@ -151,22 +148,22 @@ div>(header>ul>li*2>a)+footer>p
 <footer>
     <p></p>
 </footer>
-
+```
 
 #### ID and CLASS
 
 div#header+div.page+div#footer.class1.class2.class3
-
+```
 <div id="header"></div>
 <div class="page"></div>
 <div id="footer" class="class1 class2 class3"></div>
-
+```
 Custom attributes
 
 td[title="Hello world!" colspan=3]
-
+```
 <td title="Hello world!" colspan="3"></td>
-
+```
 Note:  
 You can use single or double quotes for quoting attribute values.
 You don’t need to quote values if they don’t contain spaces: td[title=hello colspan=3] will work.
@@ -174,7 +171,7 @@ You don’t need to quote values if they don’t contain spaces: td[title=hello 
 #### Item numbering: $
 
 ul>li.item$*5
-
+```
 <ul>
     <li class="item1"></li>
     <li class="item2"></li>
@@ -182,11 +179,11 @@ ul>li.item$*5
     <li class="item4"></li>
     <li class="item5"></li>
 </ul>
-
+```
 You can use multiple $ in a row to pad number with zeroes:
 
 ul>li.item$$$*5
-
+```
 <ul>
     <li class="item001"></li>
     <li class="item002"></li>
@@ -194,14 +191,14 @@ ul>li.item$$$*5
     <li class="item004"></li>
     <li class="item005"></li>
 </ul>
-
+```
 Changing numbering base and direction
 With @ modifier, you can change numbering direction (ascending or descending) and base (e.g. start value).
 
 For example, to change direction, add @- after $:
 
 ul>li.item$@-*5
-
+```
 <ul>
     <li class="item5"></li>
     <li class="item4"></li>
@@ -209,11 +206,12 @@ ul>li.item$@-*5
     <li class="item2"></li>
     <li class="item1"></li>
 </ul>
+```
 To change counter base value, add @N modifier to $:
 
 ul>li.item$@3*5
 …transforms to
-
+```
 <ul>
     <li class="item3"></li>
     <li class="item4"></li>
@@ -221,12 +219,12 @@ ul>li.item$@3*5
     <li class="item6"></li>
     <li class="item7"></li>
 </ul>
-
+```
 You can use these modifiers together:
 
 ul>li.item$@-3*5
 …is transformed to
-
+```
 <ul>
     <li class="item7"></li>
     <li class="item6"></li>
@@ -234,32 +232,38 @@ ul>li.item$@-3*5
     <li class="item4"></li>
     <li class="item3"></li>
 </ul>
-
+```
 
 #### Text: {}
 
 a{Click me}
-
+```
 <a href="">Click me</a>
-
+```
 Note that {text} is used and parsed as a separate element (like, div, p etc.) but has a special meaning when written right after element. For example, a{click} and a>{click} will produce the same output, but a{click}+b{here} and a>{click}+b{here} won’t:
 
 <!-- a{click}+b{here} -->
+````
 <a href="">click</a><b>here</b>
-
+````
 <!-- a>{click}+b{here} -->
+````
 <a href="">click<b>here</b></a>
+````
 In second example the <b> element is placed inside <a> element. And that’s the difference: when {text} is written right after element, it doesn’t change parent context. Here’s more complex example showing why it is important:
 
 p>{Click }+a{here}+{ to continue}
-
+````
 <p>Click <a href="">here</a> to continue</p>
-
+````
 
 p{Click }+a{here}+{ to continue}
 ...produces
 
 <p>Click </p>
+```
 <a href="">here</a> to continue
+````
+
 
 

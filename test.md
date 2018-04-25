@@ -62,6 +62,7 @@ You can use > operator to nest elements inside each other:
         <li></li>
     </ul>
 </div>|
+
 | <kbd>Ctrl</kbd>+<kbd>I</kbd> | incremental find |
 | <kbd>Ctrl</kbd>+<kbd>H</kbd> | replace |
 | <kbd>Ctrl</kbd>+<kbd>F3</kbd> | find next occurrence of current word |

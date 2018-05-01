@@ -271,3 +271,7 @@ p{Click }+a{here}+{ to continue}
 ## bootstrap autocomple how to
 Preferences > Package Control > Package Control : Install Package > write Bootstrap 4 Autocomplete
 
+
+## Bootstrap 3 Snippet
+https://github.com/JasonMortonNZ/bs3-sublime-plugin
+

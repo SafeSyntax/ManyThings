@@ -272,7 +272,7 @@ p{Click }+a{here}+{ to continue}
 Preferences > Package Control > Package Control : Install Package > write Bootstrap 4 Autocomplete
 
 
-## Bootstrap 3 Snippet
+## Bootstrap Snippet
 - [Bootstrap 3 Snippet](https://github.com/JasonMortonNZ/bs3-sublime-plugin)  
 - [Bootstrap 4 Snippet](https://github.com/degouville/sublime-bootstrap4)
 

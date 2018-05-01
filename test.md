@@ -273,6 +273,6 @@ Preferences > Package Control > Package Control : Install Package > write Bootst
 
 
 ## Bootstrap 3 Snippet
--[Bootstrap 3 Snippet](https://github.com/JasonMortonNZ/bs3-sublime-plugin)
--[Bootstrap 3 Snippet](https://github.com/degouville/sublime-bootstrap4)
+- [Bootstrap 3 Snippet](https://github.com/JasonMortonNZ/bs3-sublime-plugin)  
+- [Bootstrap 4 Snippet](https://github.com/degouville/sublime-bootstrap4)
 

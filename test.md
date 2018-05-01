@@ -267,3 +267,7 @@ p{Click }+a{here}+{ to continue}
 
 
 
+
+## bootstrap autocomple how to
+Preferences > Package Control > Package Control : Install Package > write Bootstrap 4 Autocomplete
+
